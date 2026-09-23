@@ -1,0 +1,174 @@
+* {
+  font-family: sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #cccccc;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
+.nav a:hover {
+  color: #007bff;
+}
+
+.hero {
+  background-image: url("https://plus.unsplash.com/premium_photo-1674826272761-b63a50e895da?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fG9mZmljZSUyMGJhY2tncm91bmQlMjBkYXJrfGVufDB8fDB8fHww");
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  text-align: center;
+  color: white;
+  padding: 60px 20px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #008c9e;
+}
+
+.services {
+  background-color: #f5f5f5;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.service-content {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.service-box {
+  background-color: white;
+  width: 250px;
+  padding: 25px;
+  border-radius: 8px;
+}
+
+.service-box h3 {
+  margin-top: 0;
+}
+
+.service-box p {
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.about {
+  display: flex;
+  padding: 50px 20px;
+  align-items: center;
+}
+
+.about-image {
+  width: 50%;
+  height: 300px;
+  background-image: url("https://images.unsplash.com/photo-1521737711867-e3b97375f902");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+
+.about-content {
+  width: 50%;
+  padding-left: 30px;
+  box-sizing: border-box;
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-top: 0;
+}
+
+.about-content p {
+  color: #666666;
+  margin-bottom: 30px;
+}
+
+.contact-us {
+  background-color: #222222;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.contact-us h2 {
+  font-size: 32px;
+}
+
+.contact-us p {
+  margin-bottom: 30px;
+}
+
+footer {
+  background-color: #111111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav a {
+    margin: 0 10px;
+  }
+
+  .about {
+    flex-direction: column;
+  }
+
+  .about-image,
+  .about-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .about-content {
+    margin-top: 20px;
+  }
+
+  .service-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
