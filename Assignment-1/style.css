@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background-color: lightblue;
+    text-align: center;
+    font-family: Arial;
+}
+
+h1 {
+    color: darkblue;
+    margin: 20px;
+}
+
+.score {
+    background-color: white;
+    width: 500px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+}
