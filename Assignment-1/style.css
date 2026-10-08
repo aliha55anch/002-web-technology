@@ -1,19 +1,131 @@
 body {
-    margin: 0;
-    background-color: lightblue;
-    text-align: center;
-    font-family: Arial;
+  margin: 0;
+  background-color: rgb(164, 134, 104);
+  text-align: center;
+  font-family: Arial;
 }
 
 h1 {
-    color: darkblue;
-    margin: 20px;
+  color: white;
+  margin: 20px;
 }
 
 .score {
-    background-color: white;
-    width: 500px;
-    margin: auto;
-    padding: 10px;
-    border: 2px solid black;
+  color: white;
+  background-color: rgb(129, 98, 67);
+  width: 500px;
+  margin: auto;
+  padding: 10px;
+  border: 2px solid black;
+  margin-bottom: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.road {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  background-color: #333;
+  border-left: 4px solid white;
+  border-right: 4px solid white;
+  box-shadow: 0 0 20px black;
+  overflow: hidden;
+}
+
+.line {
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  position: absolute;
+}
+
+.line1 {
+  left: 33%;
+}
+
+.line2 {
+  left: 66%;
+}
+
+.line3 {
+  left: 99%;
+}
+
+.road img {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.car1 {
+  left: 10%;
+  animation: carMove 3s linear infinite;
+}
+
+.car2 {
+  left: 43%;
+  animation: carMove 4s linear infinite;
+}
+
+.car3 {
+  left: 75%;
+  animation: carMove 5s linear infinite;
+}
+
+@keyframes carMove {
+  0% {
+    top: 100%;
+  }
+
+  100% {
+    top: -100px;
+  }
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 25px;
+  font-size: 18px;
+  background-color: rgb(129, 98, 67);
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(127, 83, 39);
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 25px;
+  }
+
+  .score {
+    width: 80%;
+    font-size: 14px;
+  }
+
+  .road {
+    width: 90%;
+    height: 600px;
+  }
+
+  .road img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .line {
+    width: 4px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 8px 20px;
+  }
 }
