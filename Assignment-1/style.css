@@ -22,7 +22,7 @@ p {
   margin: auto;
   padding: 10px;
   border: 2px solid black;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .container {
@@ -46,6 +46,14 @@ p {
   height: 100%;
   background-color: white;
   position: absolute;
+  background: repeating-linear-gradient(
+    to bottom,
+    white 0px,
+    white 40px,
+    #333 40px,
+    #333 70px
+  );
+  animation: moveLines 0.5s linear infinite;
 }
 
 .line1 {
@@ -91,6 +99,16 @@ p {
   }
 }
 
+@keyframes moveLines {
+  from {
+    background-position-y: 0;
+  }
+
+  to {
+    background-position-y: 70px;
+  }
+}
+
 button {
   margin-top: 10px;
   padding: 10px 25px;
@@ -106,13 +124,16 @@ button:hover {
 }
 
 @media (max-width: 600px) {
+  .score {
+    width: 90%;
+  }
   .road {
     width: 90%;
     height: 600px;
   }
 
   .road img {
-    width: 70px;
+    width: 60px;
     height: 70px;
   }
 
