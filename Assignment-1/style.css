@@ -10,6 +10,11 @@ h1 {
   margin: 20px;
 }
 
+p {
+  color: white;
+  font-weight: bold;
+}
+
 .score {
   color: white;
   background-color: rgb(129, 98, 67);
@@ -37,22 +42,22 @@ h1 {
 }
 
 .line {
-  width: 5px;
+  width: 4px;
   height: 100%;
   background-color: white;
   position: absolute;
 }
 
 .line1 {
-  left: 33%;
+  left: 33.33%;
 }
 
 .line2 {
-  left: 66%;
+  left: 66.66%;
 }
 
 .line3 {
-  left: 99%;
+  left: 99.99%;
 }
 
 .road img {
@@ -63,26 +68,26 @@ h1 {
 
 .car1 {
   left: 10%;
-  animation: carMove 3s linear infinite;
+  animation: carMove 2s linear infinite;
 }
 
 .car2 {
   left: 43%;
-  animation: carMove 4s linear infinite;
+  top: 450px;
 }
 
 .car3 {
   left: 75%;
-  animation: carMove 5s linear infinite;
+  animation: carMove 2s linear infinite;
 }
 
 @keyframes carMove {
   0% {
-    top: 100%;
+    top: -100px;
   }
 
   100% {
-    top: -100px;
+    top: 100%;
   }
 }
 
@@ -101,15 +106,6 @@ button:hover {
 }
 
 @media (max-width: 600px) {
-  h1 {
-    font-size: 25px;
-  }
-
-  .score {
-    width: 80%;
-    font-size: 14px;
-  }
-
   .road {
     width: 90%;
     height: 600px;
@@ -123,9 +119,9 @@ button:hover {
   .line {
     width: 4px;
   }
+}
 
-  button {
-    font-size: 16px;
-    padding: 8px 20px;
-  }
+button {
+  font-size: 16px;
+  padding: 8px 20px;
 }
